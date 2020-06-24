@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: "Lucida Grande";
+    width: 100%;
 }
 
 a {
@@ -28,8 +29,9 @@ li {
 
 .top-wrapper {
     padding: 180px 0 100px 0;
-    background-image: url("pexels-photo.jpg");
+    background-image: url(pexels-photo.jpg);
     background-size: cover;
+    width: 100%;
     color: white;
     text-align: center;
 }
@@ -93,8 +95,9 @@ li {
 }
 
 .portofolio img {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
     padding: 20px 33px;
     margin-bottom: 20px;
     background-color: #26d0c9;
@@ -150,18 +153,6 @@ header {
     display: none;
 }
 
-.worker-wrapper {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-.workers {
-    background-color: #596275;
-}
-
 .heading {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -180,14 +171,36 @@ header {
     color: #EAB543;
 }
 
+.worker-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.workers {
+    background-color: #596275;
+}
+
 .worker {
     float: left;
     width: 20%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.worker-icon img {
+    width: 80%;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #dee2e6;
 }
 
 .worker-icon:hover {
     position: relative;
     transition: all 5s;
+    width: 100%;
 }
 
 .worker-icon:active p {
@@ -217,7 +230,7 @@ header {
 
 form {
     width: 300px;
-    margin-left: 470px;
+    /*margin-left: 470px;*/
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 10px;
@@ -263,8 +276,9 @@ footer p {
 }
 
 .footer {
-    max-width: 1170px;
-    width: 1170px;
+    /* max-width: 1170px;*/
+    /*width: 1170px;*/
+    width: 100%;
     height: 200px;
     background-color: #5f5d60;
     margin: 0 auto;
